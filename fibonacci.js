@@ -15,7 +15,7 @@ console.log(fibonacci2(8) + " number of times run --> " + count);
 const mainFib = () => {
     let cache = {};
     return fib = (num) => {
-        if (num <= 1) return num;
+        if (num < 2) return num;
         if (num in cache) return cache[num];
         cache[num] = fib(num - 1) + fib(num - 2);
         console.log(cache)
@@ -23,4 +23,4 @@ const mainFib = () => {
     }
 }
 const fastFib = mainFib();
-console.log(fastFib(9));
+console.log(fastFib(8));

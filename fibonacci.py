@@ -2,7 +2,7 @@ class MainFib:
     cache = {}
 
     def fib(self, num):
-        if num <= 1:
+        if num < 2:
             return num
         if num in self.cache:
             return self.cache[num]
@@ -12,4 +12,4 @@ class MainFib:
 
 
 dynamicFib = MainFib()
-print(dynamicFib.fib(8))
+print(dynamicFib.fib(4))
