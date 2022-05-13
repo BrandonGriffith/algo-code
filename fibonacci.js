@@ -1,16 +1,16 @@
-// const fibonacci = (num) => {
-//     return num < 2 ? num : fibonacci(num - 1) + fibonacci(num - 2);
-// }
-// console.log(fibonacci(8))
+const fibonacci = (num) => {
+    return num < 2 ? num : fibonacci(num - 1) + fibonacci(num - 2);
+}
+console.log(fibonacci(8))
 
-// let count = 0;
+let count = 0;
 
-// const fibonacci2 = (num) => {
-//     count++;
-//     if (num < 2) return num;
-//     return fibonacci2(num - 1) + fibonacci2(num - 2);
-// }
-// console.log(fibonacci2(8) + " number of times run --> " + count);
+const fibonacci2 = (num) => {
+    count++;
+    if (num < 2) return num;
+    return fibonacci2(num - 1) + fibonacci2(num - 2);
+}
+console.log(fibonacci2(8) + " number of times run --> " + count);
 
 const mainFib = () => {
     let cache = {};
