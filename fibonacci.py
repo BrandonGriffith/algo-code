@@ -12,4 +12,5 @@ class MainFib:
 
 
 dynamicFib = MainFib()
+
 print(dynamicFib.fib(4))
