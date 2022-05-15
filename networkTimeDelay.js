@@ -23,7 +23,6 @@ function networkDelayTime(times, N, K) {
             }
         }
     }
-
     //Return maximum time in time array since this is how long
     //it will take for signal to reach last node.
     let res = Math.max(...time)
