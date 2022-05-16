@@ -21,5 +21,6 @@ var deepestLeavesSum = function (root) {
             if (curr.right) q.push(curr.right)
         }
     }
+
     return ans
 };
