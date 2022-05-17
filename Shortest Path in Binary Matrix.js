@@ -27,7 +27,6 @@ const shortestPathBinaryMatrix = grid => {
         for (const [dx, dy] of directions) {
             let x = row + dx;
             let y = col + dy;
-            // if invalid, continue
             if (x < 0 || x >= N) continue;
             if (y < 0 || y >= N) continue;
             if (grid[x][y] !== 0) continue;
