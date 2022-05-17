@@ -35,5 +35,6 @@ const shortestPathBinaryMatrix = grid => {
             grid[x][y] = 1;
         }
     }
+
     return -1;
 };
