@@ -23,4 +23,5 @@ const mainFib = () => {
     }
 }
 const fastFib = mainFib();
+
 console.log(fastFib(8));
