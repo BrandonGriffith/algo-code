@@ -6,12 +6,8 @@ function tournamentWinner(competitions, results) {
     let winner = "";
     for (const [idx, team] of competitions.entries()) {
         let score = results[idx];
-        if (score == 0) {
-            winner = team[1]
-        };
-        if (score == 1) {
-            winner = team[0]
-        };
+        if (score == 0) winner = team[1];
+        if (score == 1) winner = team[0];
         if (scores[winner]) scores[winner] += 1;
         if (!scores[winner]) scores[winner] = 1;
         if (scores[winner] > scores.topTeam) {
