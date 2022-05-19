@@ -3,15 +3,14 @@ function tournamentWinner(competitions, results) {
         "topTeam": 0
     }
     let bestTeam = "";
-    let idx = 0;
     let winner = "";
-    for (let i of competitions) {
+    for (const [idx, team] of competitions.entries()) {
         let score = results[idx];
         if (score == 0) {
-            winner = i[1]
+            winner = team[1]
         };
         if (score == 1) {
-            winner = i[0]
+            winner = team[0]
         };
         if (scores[winner]) scores[winner] += 1;
         if (!scores[winner]) scores[winner] = 1;
@@ -19,7 +18,6 @@ function tournamentWinner(competitions, results) {
             scores.topTeam = scores[winner];
             bestTeam = winner;
         }
-        idx++;
     }
     return bestTeam;
 }
