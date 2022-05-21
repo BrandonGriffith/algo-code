@@ -10,6 +10,7 @@ function isValidSubsequence1(array, sequence) {
 }
 
 
+
 function isValidSubsequence(array, sequence) {
     let seqIdx = 0;
     for (let value of array) {
