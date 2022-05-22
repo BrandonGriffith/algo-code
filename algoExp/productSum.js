@@ -5,11 +5,8 @@ function productSum(array) {
     const helper = (arr, multi) => {
         let sum = 0;
         for (let i of arr) {
-            if (Array.isArray(i)) {
-                sum += helper(i, multi + 1)
-            } else {
-                sum += i
-            }
+            if (Array.isArray(i)) i = helper(i, multi + 1);
+            sum += i;
         }
         return sum * multi;
     }
