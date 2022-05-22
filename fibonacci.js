@@ -24,3 +24,14 @@ const mainFib = () => {
 }
 const fastFib = mainFib();
 console.log(fastFib(6));
+
+function getNthFib(n) {
+    const cache = [0, 1];
+    for (let i = 3; i <= n; i++) {
+        let nextFib = cache[0] + cache[1];
+        cache[0] = cache[1];
+        cache[1] = nextFib;
+    }
+    return n < 2 ? cache[0] : cache[1];
+}
+console.log(getNthFib(3));
