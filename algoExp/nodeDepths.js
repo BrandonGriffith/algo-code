@@ -33,3 +33,25 @@ class BinaryTree {
 
 // Do not edit the line below.
 exports.nodeDepths = nodeDepths;
+
+
+function nodeDepths(root) {
+    let depth = 0;
+    const helper = (root, depth) => {
+        if (!root) return 0;
+        return depth + helper(root.left, depth + 1) + helper(root.right, depth + 1);
+    }
+    return helper(root, depth);
+}
+
+// This is the class of the input binary tree.
+class BinaryTree {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+// Do not edit the line below.
+exports.nodeDepths = nodeDepths;
