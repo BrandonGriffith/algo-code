@@ -13,3 +13,5 @@ function runLengthEncoding(string) {
 }
 // Do not edit the line below.
 exports.runLengthEncoding = runLengthEncoding;
+
+console.log(runLengthEncoding("AAAAAAAAAAAAABBCCCCDD"));
