@@ -1,15 +1,15 @@
 function runLengthEncoding(string) {
-    let arr = [];
+    let encode = [];
     let runner = 1;
-    for (let i = 1; i < string.length + 1; i++) {
+    for (let i = 1; i <= string.length; i++) {
         if (string[i] != string[i - 1] || runner == 9) {
-            arr.push(runner.toString());
-            arr.push(string[i - 1]);
+            encode.push(runner.toString());
+            encode.push(string[i - 1]);
             runner = 0;
         }
         runner++;
     }
-    return arr.join('');
+    return encode.join('');
 }
 // Do not edit the line below.
 exports.runLengthEncoding = runLengthEncoding;
