@@ -14,3 +14,21 @@ function binarySearch(array, target) {
 
 // Do not edit the line below.
 exports.binarySearch = binarySearch;
+
+
+function binarySearch(array, target) {
+    let left = 0;
+    let right = array.length - 1;
+    const helper = (arr, t) => {
+        while (left <= right) {
+            let middle = Math.floor((left + right) / 2);
+            if (arr[middle] == t) return middle;
+            else if (arr[middle] > t) right = middle - 1;
+            else if (arr[middle] < t) left = middle + 1;
+        }
+        return -1;
+    }
+    return helper(array, target);
+}
+// Do not edit the line below.
+exports.binarySearch = binarySearch;
