@@ -8,8 +8,6 @@ class BST {
 }
 
 function validateBst(tree) {
-    let minVal = -Infinity;
-    let maxVal = Infinity;
     const helper = (tree, minVal, maxVal) => {
         if (!tree) return true;
         if (tree.value < minVal || tree.value >= maxVal) return false;
@@ -17,7 +15,7 @@ function validateBst(tree) {
         let rightIsValid = helper(tree.right, tree.value, maxVal);
         return leftIsValid && rightIsValid;
     }
-    return helper(tree, minVal, maxVal);
+    return helper(tree, -Infinity, Infinity);
 }
 // Do not edit the line below.
 exports.BST = BST;
