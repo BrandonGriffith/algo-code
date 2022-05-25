@@ -1,15 +1,13 @@
 function minHeightBst(array) {
-    const helper = (arr, left, right, bst) => {
-        if (right < left) return;
+    const helper = (left, right) => {
+        if (left > right) return null;
         let mid = Math.floor((left + right) / 2);
-        let value = arr[mid];
-        if (!bst) bst = new BST(value);
-        else bst.insert(value);
-        helper(arr, left, mid - 1, bst);
-        helper(arr, mid + 1, right, bst);
-        return bst;
+        let node = new BST(array[mid]);
+        node.left = helper(left, mid - 1);
+        node.right = helper(mid + 1, right);
+        return node;
     }
-    return helper(array, 0, array.length - 1, null);
+    return helper(0, array.length - 1);
 }
 class BST {
     constructor(value) {
