@@ -11,7 +11,6 @@ function reconstructBst(preOrderTraversalValues) {
     // Write your code here.
     return null;
 }
-
 // Do not edit the lines below.
 exports.BST = BST;
 exports.reconstructBst = reconstructBst;
