@@ -8,10 +8,18 @@ class BST {
 }
 
 function reconstructBst(preOrderTraversalValues) {
-    // Write your code here.
-    return null;
+    let rootIdx = 0;
+    const helper = (low, high) => {
+        if (rootIdx === preOrderTraversalValues.length) return null;
+        const rootValue = preOrderTraversalValues[rootIdx];
+        if (rootValue < low || rootValue >= high) return null;
+        rootIdx++;
+        const left = helper(low, rootValue);
+        const right = helper(rootValue, high);
+        return new BST(rootValue, left, right);
+    }
+    return helper(-Infinity, Infinity);
 }
-
 // Do not edit the lines below.
 exports.BST = BST;
 exports.reconstructBst = reconstructBst;
