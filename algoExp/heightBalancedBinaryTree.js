@@ -8,7 +8,6 @@ class BinaryTree {
 }
 
 function heightBalancedBinaryTree(tree) {
-
     return false;
 }
 // Do not edit the lines below.
