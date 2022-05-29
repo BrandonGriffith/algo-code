@@ -29,3 +29,29 @@ function heightBalancedBinaryTree(tree) {
 // Do not edit the lines below.
 exports.BinaryTree = BinaryTree;
 exports.heightBalancedBinaryTree = heightBalancedBinaryTree;
+
+
+// This is an input class. Do not edit.
+class BinaryTree {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+function heightBalancedBinaryTree(tree) {
+    const helper = (node) => {
+        if (!node) return [true, 0];
+        const left = helper(node.left);
+        const right = helper(node.right);
+        const isBalanced = left[0] && right[0] && Math.abs(left[1] - right[1]) <= 1;
+        const height = Math.max(left[1], right[1]) + 1;
+        return [isBalanced, height]
+    }
+    return helper(tree)[0];
+}
+
+// Do not edit the lines below.
+exports.BinaryTree = BinaryTree;
+exports.heightBalancedBinaryTree = heightBalancedBinaryTree;
