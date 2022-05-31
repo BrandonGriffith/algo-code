@@ -27,7 +27,6 @@ function isPalindrome(string) {
         if (string[i] != string[j]) return false;
         return helper(string, i + 1);
     }
-
     return helper(string, idx);
 }
 // Do not edit the line below.
