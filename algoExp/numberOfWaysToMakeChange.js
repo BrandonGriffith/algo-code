@@ -7,6 +7,7 @@ function numberOfWaysToMakeChange(n, denoms) {
         }
     }
     return ways[n];
+
 }
 // Do not edit the line below.
 exports.numberOfWaysToMakeChange = numberOfWaysToMakeChange;
