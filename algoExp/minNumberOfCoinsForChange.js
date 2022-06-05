@@ -11,5 +11,4 @@ function minNumberOfCoinsForChange(n, denoms) {
     return minCoins[n] == Infinity ? -1 : minCoins[n];
 }
 // Do not edit the line below.
-
 exports.minNumberOfCoinsForChange = minNumberOfCoinsForChange;
