@@ -31,7 +31,6 @@ function bubbleSort(array) {
 // Do not edit the line below.
 exports.bubbleSort = bubbleSort;
 
-
 let count = 0;
 const arr = [9, 1, 8, 2, 7, 3, 6, 4, 5, 0, 1, 2, 3, 9, 1, 8, 2, 7, 3, 6, 4, 5, 0, 1, 2, 3];
 console.log(bubbleSort(arr), "number of loops", count);
