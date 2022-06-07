@@ -21,6 +21,5 @@ class Node {
         return array;
     }
 }
-
 // Do not edit the line below.
 exports.Node = Node;
