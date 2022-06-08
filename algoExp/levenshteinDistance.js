@@ -19,6 +19,5 @@ function levenshteinDistance(str1, str2) {
     }
     return grid[str2.length][str1.length];
 }
-
 // Do not edit the line below.
 exports.levenshteinDistance = levenshteinDistance;
