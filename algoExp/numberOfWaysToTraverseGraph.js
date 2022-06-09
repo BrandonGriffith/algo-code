@@ -54,3 +54,22 @@ function numberOfWaysToTraverseGraph(width, height) {
 }
 // Do not edit the line below.
 exports.numberOfWaysToTraverseGraph = numberOfWaysToTraverseGraph;
+
+
+function numberOfWaysToTraverseGraph(width, height) {
+    const rowSize = width - 1;
+    const colSize = height - 1;
+    const top = fact(rowSize + colSize);
+    const bottom = fact(rowSize) * fact(colSize);
+    return Math.floor(top / bottom);
+}
+
+function fact(num) {
+    let total = 1;
+    for (let i = 2; i <= num; i++) {
+        total *= i;
+    }
+    return total;
+}
+// Do not edit the line below.
+exports.numberOfWaysToTraverseGraph = numberOfWaysToTraverseGraph;
