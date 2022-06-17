@@ -6,6 +6,7 @@ function kadanesAlgorithm(array) {
         maxTotal = Math.max(maxTotal, maxTemp);
     }
     return maxTotal;
+
 }
 // Do not edit the line below.
 exports.kadanesAlgorithm = kadanesAlgorithm;
