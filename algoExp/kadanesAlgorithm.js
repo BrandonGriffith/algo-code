@@ -8,5 +8,4 @@ function kadanesAlgorithm(array) {
     return maxTotal;
 }
 // Do not edit the line below.
-
 exports.kadanesAlgorithm = kadanesAlgorithm;
