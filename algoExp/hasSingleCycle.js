@@ -13,4 +13,5 @@ const getNextIdx = (idx, array) => {
     return nextIdx >= 0 ? nextIdx : nextIdx + array.length;
 }
 // Do not edit the line below.
+
 exports.hasSingleCycle = hasSingleCycle;
