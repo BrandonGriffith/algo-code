@@ -9,7 +9,8 @@ const maxScore = (C, K) => {
     let best = total;
     let j = C.length - 1;
     for (let i = K - 1; i >= 0; i--) {
-        total += C[j] - C[i], best = Math.max(best, total);
+        total += C[j] - C[i];
+        best = Math.max(best, total);
         j--;
     }
     return best;
