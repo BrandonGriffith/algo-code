@@ -15,5 +15,4 @@ const maxScore = (C, K) => {
     }
     return best;
 };
-
 console.log(maxScore([1, 2, 3, 4, 5, 6, 1], 3));
