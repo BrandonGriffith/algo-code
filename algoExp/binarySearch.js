@@ -30,6 +30,5 @@ function binarySearch(array, target) {
     }
     return helper(array, target);
 }
-
 // Do not edit the line below.
 exports.binarySearch = binarySearch;
