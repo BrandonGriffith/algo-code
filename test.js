@@ -9,6 +9,7 @@ console.log("x equals ",x, "y equals ",y);
 console.log("x equals ",x, "y equals ",y);
 
 
+
 const checkSubarraySum = (nums, k) => {
 	let sum = 0;
 	let prefix = 0;
@@ -22,5 +23,7 @@ const checkSubarraySum = (nums, k) => {
 	}
 	return false;
 };
+
+
 
 console.log(checkSubarraySum([23,2,6,4,7], 6));
