@@ -23,4 +23,5 @@ const checkSubarraySum = (nums, k) => {
 	return false;
 };
 
+
 console.log(checkSubarraySum([23,2,6,4,7], 6));
